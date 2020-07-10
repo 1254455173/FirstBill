@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/classiffy"
+    >
+    <include layout="@layout/title" android:id="@+id/bill_classify_title"></include>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        >
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/classify_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginRight="5dp"
+            app:backgroundTint="#9999"
+            app:elevation="5dp"
+            app:pressedTranslationZ="12dp"
+            android:src="@drawable/plus2"
+            app:fabSize="normal"
+            app:borderWidth="0dp"
+            app:rippleColor="#cccccc"
+            android:clickable="true"
+            android:onClick="onClick"
+            />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/classify_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/delete2"
+            app:backgroundTint="#9999"
+            app:elevation="5dp"
+            app:pressedTranslationZ="12dp"
+            app:fabSize="normal"
+            app:borderWidth="0dp"
+            app:rippleColor="#cccccc"
+            android:clickable="true"
+            android:onClick="onClick"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/classify_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/edit2"
+            app:backgroundTint="#9999"
+            app:elevation="5dp"
+            app:pressedTranslationZ="12dp"
+            app:fabSize="normal"
+            app:borderWidth="0dp"
+            app:rippleColor="#cccccc"
+            android:clickable="true"
+            android:onClick="onClick"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bill_classify_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:focusable="false"
+        />
+        <!--android:listSelector="@android:color/transparent"-->
+    </LinearLayout>
+
+
+</RelativeLayout>

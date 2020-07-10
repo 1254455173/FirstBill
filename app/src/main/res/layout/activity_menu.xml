@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu2"
+
+    >
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_menu"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        >
+        <Button
+                android:id="@+id/menu_consumption"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:background="@drawable/yilan2"
+                />
+
+        <Button
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/menu_report"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:background="@drawable/tongji2"
+            />
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/menu_note"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_gravity="start|bottom"
+            android:background="@drawable/yibi2"/>
+
+
+        <Button
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/menu_classify"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:background="@drawable/fenlei2"/>
+
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
